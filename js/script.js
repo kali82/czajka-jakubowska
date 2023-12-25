@@ -1,3 +1,12 @@
+function moveTocContactSection() {
+  const element = document.getElementById("contactSection");
+  //you can do it by jquery. no matter
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "end",
+    inline: "nearest",
+  });
+}
 (function ($) {
   "use strict";
 

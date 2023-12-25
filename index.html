@@ -82,6 +82,7 @@
           </a>
 
           <button
+          style="position: absolute; right: 0;"
             class="navbar-toggler collapsed"
             type="button"
             data-toggle="collapse"
@@ -98,11 +99,11 @@
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">O mnie</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link">Usługi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Kontakt</a>
+              </li> -->
+              <li class="nav-item" style="cursor: pointer;">
+                <a onclick="moveTocContactSection()" class="nav-link">Kontakt</a>
               </li>
             </ul>
           </div>
@@ -408,7 +409,7 @@
 
   
     <!-- footer Start -->
-    <footer class="footer section gray-bg">
+    <footer id="contactSection" class="footer section gray-bg">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mr-auto col-sm-6">
